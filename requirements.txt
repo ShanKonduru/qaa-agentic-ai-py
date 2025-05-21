@@ -1,0 +1,9 @@
+# List your project dependencies here
+dotenv
+autogen
+pyautogen
+pytest
+autogen-ext[ollama]
+ag2[ollama]
+
+
