@@ -147,7 +147,7 @@ groupchat = autogen.GroupChat(
     agents=[user_proxy, test_plan_generator, test_case_generator,
             code_generator, test_report_analyzer],
     messages=[],
-    max_round=15,  # Limit conversation rounds to prevent infinite loops
+    max_round=5,  # Limit conversation rounds to prevent infinite loops
 )
 manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=llm_config)
 
